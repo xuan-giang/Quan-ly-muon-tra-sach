@@ -192,7 +192,7 @@
                                           src="https://lic.haui.edu.vn/dnn/web/haui/assets/images/logo-ngang.png"
                                           class="logo"></div>
                     <div class="row px-3 justify-content-center mt-4 mb-5 border-line"><img
-                            src="https://i.imgur.com/uNGdWHi.png" class="image"></div>
+                            src="https://i.imgur.com/uNGdWHi.png" class="image" alt="imgLogo"></div>
                 </div>
             </div>
             <div class="col-lg-6">
