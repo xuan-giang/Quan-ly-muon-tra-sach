@@ -211,13 +211,13 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="#" class="nav-link">
+                            <a href="{{ route('faculty.view') }}" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Thiết lập khoa</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">
+                            <a href="" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Thiết lập lớp</p>
                             </a>
