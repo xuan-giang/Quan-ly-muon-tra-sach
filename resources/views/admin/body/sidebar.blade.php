@@ -4,7 +4,7 @@
     {{--        $user = DB::table('users')->where('id',Auth::user()->id)->first();--}}
     {{--    @endphp--}}
     <div class="sidebar">
-        <!-- Sidebar user panel (optional) -->
+
         <div class="user-panel mt-3 pb-3 mb-3 d-flex">
             <div class="image">
                 <img style="height: 2.1rem !important;"
@@ -14,7 +14,7 @@
             </div>
             <div class="info">
                 <a href="#" class="d-block">{{ Auth::user()->name }}</a>
-                {{--                <a href="#" class="d-block">{{ $user->name }}</a>--}}
+
             </div>
         </div>
 
@@ -211,13 +211,13 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="#" class="nav-link">
+                            <a href="{{ route('faculty.view') }}" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Thiết lập khoa</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">
+                            <a href="" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Thiết lập lớp</p>
                             </a>
@@ -246,7 +246,7 @@
                 </li>
             </ul>
         </nav>
-        <!-- /.sidebar-menu -->
+
     </div>
     <!-- /.sidebar -->
 </aside>
