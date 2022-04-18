@@ -77,13 +77,13 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="#" class="nav-link">
+                            <a href="{{ route('category.add')}}" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Thêm mới danh mục</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">
+                            <a href="{{ route('category.view') }}" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Quản lý danh mục</p>
                             </a>

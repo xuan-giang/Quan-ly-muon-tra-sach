@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\FacultyController;
 use Illuminate\Support\Facades\Route;
 
@@ -42,5 +43,22 @@ Route::prefix('faculty')->group(function () {
     Route::post('/update/{id}', [FacultyController::class, 'facultyUpdate'])->name('faculty.update');
 
     Route::get('/delete/{id}', [FacultyController::class, 'facultyDelete'])->name('faculty.delete');
+
+});
+// CATEGORY
+
+Route::prefix('category')->group(function () {
+
+    Route::get('/view', [CategoryController::class, 'categoryView'])->name('category.view');
+
+    Route::get('/add', [CategoryController::class, 'categoryAdd'])->name('category.add');
+
+    Route::post('/store', [CategoryController::class, 'categoryStore'])->name('category.store');
+
+    Route::get('/edit/{id}', [CategoryController::class, 'categoryEdit'])->name('category.edit');
+
+    Route::post('/update/{id}', [CategoryController::class, 'categoryUpdate'])->name('category.update');
+
+    Route::get('/delete/{id}', [CategoryController::class, 'categoryDelete'])->name('category.delete');
 
 });
