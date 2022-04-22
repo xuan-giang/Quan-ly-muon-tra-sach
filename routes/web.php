@@ -81,3 +81,4 @@ Route::prefix('book')->group(function () {
     Route::get('/delete/{id}', [BookController::class, 'bookDelete'])->name('book.delete');
 
 });
+
