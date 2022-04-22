@@ -5,9 +5,13 @@ use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\ClassController;
 use App\Http\Controllers\FacultyController;
 use App\Http\Controllers\BookController;
+
 use App\Http\Controllers\IssuesController;
 use App\Http\Controllers\ReaderController;
 use App\Http\Controllers\StatisticalController;
+
+use App\Http\Controllers\UserController;
+
 use Illuminate\Support\Facades\Route;
 
 
@@ -86,6 +90,7 @@ Route::prefix('book')->group(function () {
     Route::get('/delete/{id}', [BookController::class, 'bookDelete'])->name('book.delete');
 
 });
+
 
 // CLASS
 
@@ -190,5 +195,24 @@ Route::prefix('statistical')->group(function () {
     Route::post('/update/{id}', [StatisticalController::class, 'statisticalUpdate'])->name('statistical.update');
 
     Route::get('/delete/{id}', [StatisticalController::class, 'statisticalDelete'])->name('statistical.delete');
+
+=======
+// USER
+
+Route::prefix('users')->group(function () {
+
+    Route::get('/view', [UserController::class, 'UserView'])->name('user.view');
+
+    Route::get('/add', [UserController::class, 'UserAdd'])->name('users.add');
+
+    Route::post('/store', [UserController::class, 'UserStore'])->name('users.store');
+
+    Route::get('/edit/{id}', [UserController::class, 'UserEdit'])->name('users.edit');
+
+    Route::post('/update/{id}', [UserController::class, 'UserUpdate'])->name('users.update');
+
+    Route::get('/delete/{id}', [UserController::class, 'UserDelete'])->name('users.delete');
+
+    Route::get('/setup', [UserController::class, 'UserSetup'])->name('users.setup');
 
 });
