@@ -41,25 +41,25 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="#" class="nav-link">
+                            <a href="{{ route('borrow.add') }}" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Nhập mượn</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">
+                            <a href="{{ route('return.add') }}" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Nhập trả</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">
+                            <a href="{{ route('borrow.view') }}" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Quản lý mượn trả</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">
+                            <a href="{{ route('issues.view') }}" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Sự cố</p>
                             </a>
@@ -131,13 +131,13 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="#" class="nav-link">
+                            <a href="{{ route('reader.add') }}" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Thêm bạn đọc mới</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">
+                            <a href="{{ route('reader.view') }}" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Quản lý bạn đọc</p>
                             </a>
@@ -154,25 +154,25 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="#" class="nav-link">
+                            <a href="{{ route('statistical.view.reader') }}" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Bạn đọc</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">
+                            <a href="{{ route('statistical.view.category') }}" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Danh mục</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">
+                            <a href="{{ route('statistical.view.book') }}" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Sách</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">
+                            <a href="{{ route('statistical.view.borrow') }}" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Phiếu mượn</p>
                             </a>
@@ -217,7 +217,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="" class="nav-link">
+                            <a href="{{ route('class.view') }}" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Thiết lập lớp</p>
                             </a>
@@ -239,7 +239,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">
+                    <a href="" class="nav-link">
                         <i class="fas fa-sign-out-alt nav-icon"></i>
                         <p>Đăng xuất</p>
                     </a>
