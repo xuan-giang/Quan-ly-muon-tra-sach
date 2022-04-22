@@ -112,12 +112,12 @@
                                 <p>Quản lý sách</p>
                             </a>
                         </li>
-                        <li class="nav-item">
+                        <!-- <li class="nav-item">
                             <a href="#" class="nav-link" onClick="alert('Tính năng này đang phát triển\nVui lòng quay lại sau')">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Dự trù mua sách</p>
                             </a>
-                        </li>
+                        </li> -->
                     </ul>
                 </li>
 
