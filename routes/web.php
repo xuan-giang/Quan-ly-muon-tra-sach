@@ -2,7 +2,9 @@
 
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\FacultyController;
+use App\Http\Controllers\BookController;
 use Illuminate\Support\Facades\Route;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -60,5 +62,22 @@ Route::prefix('category')->group(function () {
     Route::post('/update/{id}', [CategoryController::class, 'categoryUpdate'])->name('category.update');
 
     Route::get('/delete/{id}', [CategoryController::class, 'categoryDelete'])->name('category.delete');
+
+});
+
+//book
+Route::prefix('book')->group(function () {
+
+    Route::get('/view', [BookController::class, 'bookView'])->name('book.view');
+
+    Route::get('/add', [BookController::class, 'bookAdd'])->name('book.add');
+
+    Route::post('/store', [BookController::class, 'bookStore'])->name('book.store');
+
+    Route::get('/edit/{id}', [BookController::class, 'bookEdit'])->name('book.edit');
+
+    Route::post('/update/{id}', [BookController::class, 'bookUpdate'])->name('book.update');
+
+    Route::get('/delete/{id}', [BookController::class, 'bookDelete'])->name('book.delete');
 
 });
