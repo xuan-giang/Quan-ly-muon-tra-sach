@@ -195,8 +195,8 @@ Route::prefix('statistical')->group(function () {
     Route::post('/update/{id}', [StatisticalController::class, 'statisticalUpdate'])->name('statistical.update');
 
     Route::get('/delete/{id}', [StatisticalController::class, 'statisticalDelete'])->name('statistical.delete');
-
 });
+
 // USER
 
 Route::prefix('users')->group(function () {
