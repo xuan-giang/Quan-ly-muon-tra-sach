@@ -5,7 +5,7 @@ use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\ClassController;
 use App\Http\Controllers\FacultyController;
 use App\Http\Controllers\BookController;
-
+use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\IssuesController;
 use App\Http\Controllers\ReaderController;
 use App\Http\Controllers\StatisticalController;
@@ -195,8 +195,8 @@ Route::prefix('statistical')->group(function () {
     Route::post('/update/{id}', [StatisticalController::class, 'statisticalUpdate'])->name('statistical.update');
 
     Route::get('/delete/{id}', [StatisticalController::class, 'statisticalDelete'])->name('statistical.delete');
-
 });
+
 // USER
 
 Route::prefix('users')->group(function () {
@@ -214,5 +214,20 @@ Route::prefix('users')->group(function () {
     Route::get('/delete/{id}', [UserController::class, 'UserDelete'])->name('users.delete');
 
     Route::get('/setup', [UserController::class, 'UserSetup'])->name('users.setup');
+
+});
+
+// USER PROFILE
+Route::prefix('profile')->group(function () {
+
+    Route::get('/view', [ProfileController::class, 'profileView'])->name('profile.view');
+
+    Route::get('/edit', [ProfileController::class, 'profileEdit'])->name('profile.edit');
+
+    Route::post('/store', [ProfileController::class, 'profileStore'])->name('profile.store');
+
+    Route::get('/password/view', [ProfileController::class, 'passwordView'])->name('password.view');
+
+    Route::post('/password/update', [ProfileController::class, 'passwordUpdate'])->name('password.update');
 
 });
