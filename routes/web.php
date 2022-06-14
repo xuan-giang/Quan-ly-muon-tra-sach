@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\BorrowController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\ClassController;
@@ -36,6 +37,20 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 
 })->name('dashboard');
 
+// USER PROFILE
+Route::prefix('profile')->group(function () {
+
+    Route::get('/view', [ProfileController::class, 'profileView'])->name('profile.view');
+
+    Route::get('/edit', [ProfileController::class, 'profileEdit'])->name('profile.edit');
+
+    Route::post('/store', [ProfileController::class, 'profileStore'])->name('profile.store');
+
+    Route::get('/password/view', [ProfileController::class, 'passwordView'])->name('password.view');
+
+    Route::post('/password/update', [ProfileController::class, 'passwordUpdate'])->name('password.update');
+
+});
 
 // FACULTY
 
